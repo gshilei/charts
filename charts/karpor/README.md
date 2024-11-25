@@ -89,6 +89,7 @@ The Karpor Syncer Component is independent server to synchronize cluster resourc
 | syncer.port | int | `7443` | Port for Karpor syncer. |
 | syncer.replicas | int | `1` | The number of karpor syncer pods to run. |
 | syncer.resources | object | `{"limits":{"cpu":"500m","ephemeral-storage":"10Gi","memory":"1Gi"},"requests":{"cpu":"250m","ephemeral-storage":"2Gi","memory":"256Mi"}}` | Resource limits and requests for the karpor syncer pods. |
+| server.serviceType | string | "ClusterIP"                                                                                                                                | Service type for the karpor server. The available type values list as ["ClusterIP"、"NodePort"、"LoadBalancer"]. |
 
 ### ElasticSearch
 
